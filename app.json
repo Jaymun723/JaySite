@@ -1,0 +1,7 @@
+{
+  "name": "Jaysite",
+  "description": "Because it's fun",
+  "repository": "https://github.com/Jaymun723/JaySite",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

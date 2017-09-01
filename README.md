@@ -1,2 +1,3 @@
 # JaySite
-The repo of my website.
+
+This is the repo of my website.
