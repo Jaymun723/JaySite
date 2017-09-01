@@ -2,7 +2,6 @@ var express = require('express')
 var path = require('path')
 var favicon = require('serve-favicon')
 var logger = require('morgan')
-var config = require(path.join(__dirname, '/config/basic.json'))
 
 var index = require('./routes/index')
 
@@ -15,6 +14,8 @@ app.use(favicon(path.join(__dirname, '/public/favicon.ico')))
 app.use(logger('dev'))
 app.use('/public', express.static('public'))
 
+var port = process.env.PORT || 5000
+
 // Routes baby, routes
 app.use('/', index)
 
@@ -24,6 +25,6 @@ app.use(function (req, res, next) {
   res.render('404')
 })
 
-app.listen(config.port, function () {
-  console.log('Server listening on port ' + config.port + '.')
+app.listen(port, function () {
+  console.log('Server listening on port ' + port + '.')
 })
