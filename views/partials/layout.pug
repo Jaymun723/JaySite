@@ -20,6 +20,11 @@ html(lang='fr')
                 a.nav-link.active(href='/') Accueil
               else
                 a.nav-link(href='/') Accueil
+            li.nav-item
+              if title === 'Trucs'
+                a.nav-link.active(href="/trucs") Trucs
+              else
+                a.nav-link(href="/trucs") Trucs
         h3.text-muted Jaymun723
       block content
       footer.footer

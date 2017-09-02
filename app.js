@@ -4,6 +4,7 @@ var favicon = require('serve-favicon')
 var logger = require('morgan')
 
 var index = require('./routes/index')
+var trucs = require('./routes/trucs')
 
 var app = express()
 
@@ -18,6 +19,7 @@ var port = process.env.PORT || 5000
 
 // Routes baby, routes
 app.use('/', index)
+app.use('/trucs', trucs)
 
 // catch 404
 app.use(function (req, res, next) {
