@@ -25,6 +25,11 @@ html(lang='fr')
                 a.nav-link.active(href="/trucs") Trucs
               else
                 a.nav-link(href="/trucs") Trucs
+            li.nav-item
+              if title === 'Contact'
+                a.nav-link.active(href="/contact") Contact
+              else
+                a.nav-link(href="/contact") Contact
         h3.text-muted Jaymun723
       block content
       footer.footer

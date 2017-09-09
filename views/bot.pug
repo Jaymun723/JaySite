@@ -1,0 +1,45 @@
+extends partials/layout 
+
+block content 
+  .jumbotron
+    h1 Introduction
+    p.lead Dans ce tutoriel je vous expliquerait comment créer un bot discord facilement avec ContainScord et son 
+      a(href="https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande") CLI
+      |. Ce tutoriel s'adresse au posséseur d'un ordinateur windows.
+    h1 Créer un compte "bot"
+    p.lead Première étape, c'est d'avoir un compte pour votre bot Discord. Pour cela il suffit de suivre ce 
+      a(href="https://github.com/Jaymun723/ContainScord/wiki/Installation#get-a-bot") tutoriel 
+      | en anglais certe mais assez explicite quand même. Il vous faudrat bien garder le token que vous récupérerez à lin du tutoriel.
+    h1 Installer les bases
+    p.lead Il vous faudrat la dernière version de 
+      a(href="https://nodejs.org") Node.JS 
+      | (version 8.4 actuellement). Puis il faudrat installer 
+      a(href="https://github.com/Jaymun723/ContainScord-CLI") ContainScord-CLI
+      |. Pour l'installer faîtes
+      code Windows puis tapez cmd
+      | une fois dans la fenètre de commande tapez 
+      code npm install -g containscord-cli
+      | (Attention: 
+      strong -g 
+      | est important).
+    h1 Initialiser le bot
+    p.lead Dans un dossier créer spécialement pour le bot ouvrez une fenètre de commande via 
+      code maj + clique droit > ouvrir un fenètre powershell / ouvrir une fenètre de commande
+      | puis si ça ne marche pas faîtes 
+      code Windows puis tapez cmd 
+      | puis naviguez via la commande 
+      code cd
+      |  jusqu'au dossier qui contient ContainScord. Ensuite écrivez 
+      code csd new
+      |  . Repondez ensuite à toutes les questions... Et puis c'est bon ! Pour en savoir plus sur le fichier config.json voici 
+      a(href="https://github.com/Jaymun723/ContainScord/wiki/Configuration") un article
+      |  (en anglais).
+    h1 Lancer le bot
+    p.lead Pour lancer le bot faîtes 
+      code node index.js
+      | . Si rien ne se passe c'est que le token fourni est invalide... Sinon utiliser le lien afin d'inviter le bot sur votre serveur.
+    h1 Un problème ?
+    p.lead N'ésitez pas à me 
+      a(href="/contact") contacter
+      |.
+
